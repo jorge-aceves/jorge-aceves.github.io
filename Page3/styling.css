@@ -1,0 +1,61 @@
+*{
+  font:inherit;
+  font-size: 15px;
+}
+html{
+  box-sizing: border-box;
+}
+#cent > *{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+body{
+  font-family: "Trebuchet MS", Helvetica, sans-serif; 
+  background-color: #F1F1F1;
+}
+#mainForm{
+  height: 50px;
+  text-align: center;
+}
+.divClass{
+  box-shadow: 10px 10px 5px #888888;
+  padding: 15px;
+  border-radius: 25px;
+  background-color: #D9EDF7;
+  border: 2px double #5F5F5F;
+  width: 600px;
+  margin-bottom: 5px;
+  position: relative;
+}
+#results{
+    background-color: #FFF5C3;
+}
+button{
+  background-color: #008CBA;
+  border: none;
+  margin-bottom: 5px;
+  border-radius: 8px;
+}
+.buttonWrap{
+  width: 600px;
+}
+#clearButton, #submitButton{
+  display:none;
+  float: right;
+  margin: 10px;
+}
+input{
+  height:20px;
+  margin-left: 20px;
+}
+span{
+  margin-right: 20px;
+}
+input:active{
+  border:1px solid blue;
+}
+.error{
+   border:1px solid red;
+}
+.ui-effects-wrapper {  display:inline;}
