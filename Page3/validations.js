@@ -27,7 +27,7 @@ function validateFunction(){
      $("#results").addClass('divClass');
       $("#clearButton").show();
   }else{
-      resultDiv.innerHTML="There's a blank input in your form"
+      resultDiv.innerHTML="There's a blank input in your form";
       $("#results").addClass('divClass');
   }
 }
