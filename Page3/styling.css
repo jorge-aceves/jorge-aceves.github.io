@@ -39,6 +39,7 @@ button{
 }
 .buttonWrap{
   width: 600px;
+  overflow: hidden;
 }
 #clearButton, #submitButton{
   display:none;
