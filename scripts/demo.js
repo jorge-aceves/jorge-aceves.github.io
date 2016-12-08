@@ -2,8 +2,9 @@
 var aboutMeText="My name is Jorge Aceves, I'm a developer, I've worked with Java, HTML5,CSS3,JavaScript amongst others";
 var archiveText="This is the archive, any old posts will appear here";
 var clickText="Lorem Ipsum";
+var divContent;
 $(document).ready(function() {
-var content = document.getElementById("content");
+divContent = document.getElementById("content");
 initialState();
 $('nav ul li').hover(
   function() {
@@ -16,28 +17,28 @@ $('nav ul li').hover(
 });
 
 function initialState(){
-  content.innerHTML="";
-  addText(content,"Hello, this is the main content of the page. You can add content to it by clicking on the button");
+  divContent.innerHTML="";
+  addText(divContent,"Hello, this is the main content of the page. You can add content to it by clicking on the button");
   var element = document.createElement("button");
 element.innerHTML = "ClickMe";
 element.addEventListener("click",function(){
-  addText(content,clickText);
+  addText(divContent,clickText);
 }); 
-content.appendChild(element);
+divContent.appendChild(element);
 var element = document.createElement("button");
 element.innerHTML = "Clear";
 element.addEventListener("click",function(){
-  content.innerHTML="";
+  divContent.innerHTML="";
   initialState();
 }); 
-content.appendChild(element);
+divContent.appendChild(element);
   
 var br = document.createElement("br");
-content.appendChild(br);
+divContent.appendChild(br);
   
  var aboutMe = document.getElementById("aboutMe");
   aboutMe.addEventListener("click",function(){
-    setText(content,aboutMeText);
+    setText(divContent,aboutMeText);
   });
 var mainSpan = document.getElementById("Main");
   mainSpan.addEventListener("click",function(){
@@ -45,7 +46,7 @@ var mainSpan = document.getElementById("Main");
   });
  var archive = document.getElementById("Archive");
   archive.addEventListener("click",function(){
-    setText(content,archiveText);
+    setText(divContent,archiveText);
   }); 
 
  var dropMenu = document.querySelector("#dropDown");
